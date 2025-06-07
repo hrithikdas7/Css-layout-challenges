@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1: Basic Web Page Structure</title>
+    <style>
+        div {
+            border: 2px dotted;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+
+
+        }
+
+        .header {
+            flex: 1;
+        }
+
+        .navigation {
+            flex: 0.5;
+        }
+
+        .content-container {
+            display: flex;
+            flex: 4;
+        }
+
+        .footer {
+            flex: 1;
+        }
+
+        .content-container > div {
+            align-items: center;
+        }
+
+        .Sidebar {
+            flex: 1;
+            
+        }
+
+        .main-content {
+            flex: 2.5;
+        }
+
+        .ads {
+            flex: 0.5;
+        }
+    </style>
+</head>
+<!-- ------------------------------------------------
+|                    Header                   |
+------------------------------------------------
+|                  Navigation                 |
+------------------------------------------------
+| Sidebar |         Main Content         | Ads |
+------------------------------------------------
+|                   Footer                    |
+------------------------------------------------ -->
+
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Header</p>
+        </div>
+        <div class="navigation">
+            <p>Navigation</p>
+        </div>
+        <div class="content-container">
+            <div class="Sidebar">
+                <p>sidebar</p>
+            </div>
+            <div class="main-content">
+                <p>Main content</p>
+            </div>
+            <div class="ads">
+                <p>ads</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
